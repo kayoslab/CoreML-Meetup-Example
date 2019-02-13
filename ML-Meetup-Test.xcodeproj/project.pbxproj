@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601E9F5022144B7500668991 /* CaltechClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 601E9F4F22144B7500668991 /* CaltechClassifier.mlmodel */; };
+		605A7E6D220F195B0066A4F1 /* LiveSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605A7E6C220F195B0066A4F1 /* LiveSessionViewController.swift */; };
+		605A7E6F220F19CC0066A4F1 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605A7E6E220F19CC0066A4F1 /* StaticViewController.swift */; };
 		607B6145220DFF920087E3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607B6144220DFF920087E3EF /* AppDelegate.swift */; };
-		607B6147220DFF920087E3EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607B6146220DFF920087E3EF /* ViewController.swift */; };
 		607B614A220DFF920087E3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607B6148220DFF920087E3EF /* Main.storyboard */; };
 		607B614C220DFF920087E3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607B614B220DFF920087E3EF /* Assets.xcassets */; };
 		607B614F220DFF920087E3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607B614D220DFF920087E3EF /* LaunchScreen.storyboard */; };
+		60E2F3BE220F30B400276DBE /* EveClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 60E2F3BD220F30B400276DBE /* EveClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		601E9F4F22144B7500668991 /* CaltechClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CaltechClassifier.mlmodel; sourceTree = "<group>"; };
+		605A7E6C220F195B0066A4F1 /* LiveSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSessionViewController.swift; sourceTree = "<group>"; };
+		605A7E6E220F19CC0066A4F1 /* StaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
 		607B6141220DFF920087E3EF /* ML-Meetup-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ML-Meetup-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607B6144220DFF920087E3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607B6146220DFF920087E3EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607B6149220DFF920087E3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607B614B220DFF920087E3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607B614E220DFF920087E3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		607B6150220DFF920087E3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E2F3BD220F30B400276DBE /* EveClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EveClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		607B6138220DFF910087E3EF = {
 			isa = PBXGroup;
 			children = (
+				607B615A220E025A0087E3EF /* Trainer */,
 				607B6143220DFF920087E3EF /* ML-Meetup-Test */,
 				607B6142220DFF920087E3EF /* Products */,
 			);
@@ -54,14 +61,56 @@
 		607B6143220DFF920087E3EF /* ML-Meetup-Test */ = {
 			isa = PBXGroup;
 			children = (
+				607B6156220DFF980087E3EF /* Application */,
+				607B6157220DFFAC0087E3EF /* Feature Targets */,
+				607B6159220DFFCD0087E3EF /* Supporting Files */,
+			);
+			path = "ML-Meetup-Test";
+			sourceTree = "<group>";
+		};
+		607B6156220DFF980087E3EF /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				607B6144220DFF920087E3EF /* AppDelegate.swift */,
-				607B6146220DFF920087E3EF /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		607B6157220DFFAC0087E3EF /* Feature Targets */ = {
+			isa = PBXGroup;
+			children = (
+				607B6158220DFFBD0087E3EF /* Scanner */,
+			);
+			path = "Feature Targets";
+			sourceTree = "<group>";
+		};
+		607B6158220DFFBD0087E3EF /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
 				607B6148220DFF920087E3EF /* Main.storyboard */,
+				605A7E6E220F19CC0066A4F1 /* StaticViewController.swift */,
+				605A7E6C220F195B0066A4F1 /* LiveSessionViewController.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		607B6159220DFFCD0087E3EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				607B614B220DFF920087E3EF /* Assets.xcassets */,
 				607B614D220DFF920087E3EF /* LaunchScreen.storyboard */,
 				607B6150220DFF920087E3EF /* Info.plist */,
 			);
-			path = "ML-Meetup-Test";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607B615A220E025A0087E3EF /* Trainer */ = {
+			isa = PBXGroup;
+			children = (
+				601E9F4F22144B7500668991 /* CaltechClassifier.mlmodel */,
+				60E2F3BD220F30B400276DBE /* EveClassifier.mlmodel */,
+			);
+			path = Trainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607B6147220DFF920087E3EF /* ViewController.swift in Sources */,
+				60E2F3BE220F30B400276DBE /* EveClassifier.mlmodel in Sources */,
+				605A7E6F220F19CC0066A4F1 /* StaticViewController.swift in Sources */,
+				605A7E6D220F195B0066A4F1 /* LiveSessionViewController.swift in Sources */,
+				601E9F5022144B7500668991 /* CaltechClassifier.mlmodel in Sources */,
 				607B6145220DFF920087E3EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,14 +334,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HCUYE57C;
 				INFOPLIST_FILE = "ML-Meetup-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cr0ss.ML-Meetup-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cr0ss.ml;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +354,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5HCUYE57C;
 				INFOPLIST_FILE = "ML-Meetup-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cr0ss.ML-Meetup-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cr0ss.ml;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
